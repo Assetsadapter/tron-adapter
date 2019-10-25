@@ -1,4 +1,4 @@
-module github.com/blocktree/tron-adapter
+module github.com/Assetsadapter/tron-adapter
 
 go 1.12
 
@@ -8,6 +8,7 @@ require (
 	github.com/blocktree/go-owcdrivers v1.0.12
 	github.com/blocktree/go-owcrypt v1.0.1
 	github.com/blocktree/openwallet v1.4.6
+	github.com/blocktree/tron-adapter v1.1.7
 	github.com/bndr/gotabulate v1.1.2
 	github.com/btcsuite/btcutil v0.0.0-20190316010144-3ac1210f4b38
 	github.com/golang/protobuf v1.3.1

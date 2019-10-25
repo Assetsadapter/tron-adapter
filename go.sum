@@ -30,6 +30,8 @@ github.com/blocktree/go-owcrypt v1.0.1/go.mod h1:5FCinL/4XVEqbmAFTOUgfMJVNJEw6Wz
 github.com/blocktree/openwallet v1.4.1/go.mod h1:jStJigV8cNTOmvzvWJ4bdjXhiRvtQtSh++uJxSZRcb0=
 github.com/blocktree/openwallet v1.4.6 h1:u5rjB/XcMmbFomVaKunVcas1ATNz0wYf7P5HkQD4prM=
 github.com/blocktree/openwallet v1.4.6/go.mod h1:e5IqJ6OqCM5qEN4TTxeeWbd3l3kCRLPC6fG4/KLiA7I=
+github.com/blocktree/tron-adapter v1.1.7 h1:iwcPipiaHNsuqm7L946aITMQ9ip5BAz6H7vbMC5Cyhg=
+github.com/blocktree/tron-adapter v1.1.7/go.mod h1:6HIQc73lDjBIk987FlLooim5YXXlKhrP1H2JH5pcUYE=
 github.com/bndr/gotabulate v1.1.2 h1:yC9izuZEphojb9r+KYL4W9IJKO/ceIO8HDwxMA24U4c=
 github.com/bndr/gotabulate v1.1.2/go.mod h1:0+8yUgaPTtLRTjf49E8oju7ojpU11YmXyvq1LbPAb3U=
 github.com/bradfitz/gomemcache v0.0.0-20180710155616-bc664df96737/go.mod h1:PmM6Mmwb0LSuEubjR8N7PtNe1KxZLtOUHtbeikc5h60=
@@ -136,14 +138,10 @@ github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UV
 github.com/syndtr/goleveldb v0.0.0-20181127023241-353a9fca669c/go.mod h1:Z4AUp2Km+PwemOoO/VB5AOx9XSsIItzFjoJlOSiYmn0=
 github.com/tidwall/gjson v1.2.1 h1:j0efZLrZUvNerEf6xqoi0NjWMK5YlLrR7Guo/dxY174=
 github.com/tidwall/gjson v1.2.1/go.mod h1:c/nTNbUr0E0OrXEhq1pwa8iEgc2DOt4ZZqAt1HtCkPA=
-github.com/tidwall/gjson v1.3.2 h1:+7p3qQFaH3fOMXAJSrdZwGKcOO/lYdGS0HqGhPqDdTI=
-github.com/tidwall/gjson v1.3.2/go.mod h1:P256ACg0Mn+j1RXIDXoss50DeIABTYK1PULOJHhxOls=
 github.com/tidwall/match v1.0.1 h1:PnKP62LPNxHKTwvHHZZzdOAOCtsJTjo6dZLCwpKm5xc=
 github.com/tidwall/match v1.0.1/go.mod h1:LujAq0jyVjBy028G1WhWfIzbpQfMO8bBZ6Tyb0+pL9E=
 github.com/tidwall/pretty v0.0.0-20190325153808-1166b9ac2b65 h1:rQ229MBgvW68s1/g6f1/63TgYwYxfF4E+bi/KC19P8g=
 github.com/tidwall/pretty v0.0.0-20190325153808-1166b9ac2b65/go.mod h1:XNkn88O1ChpSDQmQeStsy+sBenx6DDtFZJxhVysOjyk=
-github.com/tidwall/pretty v1.0.0 h1:HsD+QiTn7sK6flMKIvNmpqz1qrpP3Ps6jOKIKMooyg4=
-github.com/tidwall/pretty v1.0.0/go.mod h1:XNkn88O1ChpSDQmQeStsy+sBenx6DDtFZJxhVysOjyk=
 github.com/tyler-smith/go-bip39 v1.0.0/go.mod h1:sJ5fKU0s6JVwZjjcUEX2zFOnvq0ASQ2K9Zr6cf67kNs=
 github.com/vmihailenco/msgpack v4.0.4+incompatible h1:dSLoQfGFAo3F6OoNhwUmLwVgaUXK79GlxNBwueZn0xI=
 github.com/vmihailenco/msgpack v4.0.4+incompatible/go.mod h1:fy3FlTQTDXWkZ7Bh6AcGMlsjHatGryHQYUTf1ShIgkk=
