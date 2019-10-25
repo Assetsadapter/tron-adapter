@@ -22,7 +22,7 @@ import (
 	"github.com/blocktree/openwallet/log"
 	"github.com/golang/protobuf/proto"
 	"github.com/imroc/req"
-	"github.com/blocktree/tron-adapter/tron/grpc-gateway/core"
+	"github.com/Assetsadapter/tron-adapter/tron/grpc-gateway/core"
 )
 
 // GetTotalTransaction Done!

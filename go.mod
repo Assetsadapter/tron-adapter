@@ -8,7 +8,6 @@ require (
 	github.com/blocktree/go-owcdrivers v1.0.12
 	github.com/blocktree/go-owcrypt v1.0.1
 	github.com/blocktree/openwallet v1.4.6
-	github.com/blocktree/tron-adapter v1.1.7
 	github.com/bndr/gotabulate v1.1.2
 	github.com/btcsuite/btcutil v0.0.0-20190316010144-3ac1210f4b38
 	github.com/golang/protobuf v1.3.1
@@ -20,5 +19,3 @@ require (
 	google.golang.org/genproto v0.0.0-20190404172233-64821d5d2107
 	google.golang.org/grpc v1.19.1
 )
-
-//replace github.com/blocktree/openwallet => ../../openwallet

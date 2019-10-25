@@ -3,4 +3,5 @@ release
 .vscode
 .idea
 *.key
+go.sum
 openwtester/conf
