@@ -42,7 +42,7 @@ func (wm *WalletManager) GetCurrentBlock() (block *Block, err error) {
 // Return value：Latest block on full node
 func (wm *WalletManager) GetNowBlock() (block *Block, err error) {
 
-	r, err := wm.WalletClient.Call("/wallet/getnowblock", req.Param{})
+	r, err := wm.WalletClient.Call("/wallet/getnowblock", nil)
 	if err != nil {
 		return nil, err
 	}

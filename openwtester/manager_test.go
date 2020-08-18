@@ -1,9 +1,9 @@
 package openwtester
 
 import (
-	"github.com/blocktree/openwallet/log"
-	"github.com/blocktree/openwallet/openw"
-	"github.com/blocktree/openwallet/openwallet"
+	"github.com/blocktree/openwallet/v2/log"
+	"github.com/blocktree/openwallet/v2/openw"
+	"github.com/blocktree/openwallet/v2/openwallet"
 	"path/filepath"
 	"testing"
 )
@@ -11,6 +11,8 @@ import (
 var (
 	testApp        = "assets-adapter"
 	configFilePath = filepath.Join("conf")
+	dbFilePath     = filepath.Join("data", "db")
+	dbFileName     = "blockchain-trx.db"
 )
 
 func testInitWalletManager() *openw.WalletManager {

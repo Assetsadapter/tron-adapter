@@ -16,11 +16,11 @@
 package openwtester
 
 import (
-	"github.com/blocktree/openwallet/openw"
+	"github.com/blocktree/openwallet/v2/openw"
 	"testing"
 
-	"github.com/blocktree/openwallet/log"
-	"github.com/blocktree/openwallet/openwallet"
+	"github.com/blocktree/openwallet/v2/log"
+	"github.com/blocktree/openwallet/v2/openwallet"
 )
 
 func testGetAssetsAccountBalance(tm *openw.WalletManager, walletID, accountID string) {
@@ -127,7 +127,7 @@ func TestTransfer_TRX(t *testing.T) {
 
 	testGetAssetsAccountBalance(tm, walletID, accountID)
 
-	rawTx, err := testCreateTransactionStep(tm, walletID, accountID, to, "1.199920", "", nil)
+	rawTx, err := testCreateTransactionStep(tm, walletID, accountID, to, "0.1", "", nil)
 	if err != nil {
 		return
 	}
@@ -150,7 +150,6 @@ func TestTransfer_TRX(t *testing.T) {
 	}
 
 }
-
 
 func TestTransfer_TRC20(t *testing.T) {
 	tm := testInitWalletManager()
@@ -203,7 +202,6 @@ func TestTransfer_TRC20(t *testing.T) {
 
 }
 
-
 func TestTransfer_TRC10(t *testing.T) {
 	tm := testInitWalletManager()
 	walletID := "WLHdqGtGGZkBHEyXmv1w82s2iZjWJjgWF8"
@@ -245,7 +243,6 @@ func TestTransfer_TRC10(t *testing.T) {
 	//}
 
 }
-
 
 func TestSummary(t *testing.T) {
 	tm := testInitWalletManager()
@@ -300,7 +297,7 @@ func TestSummary_TRC10(t *testing.T) {
 	//summaryAddress := "TS11WZyPnT8qidwREcR8VDzNULCXxFeBMa"
 
 	feesSupport := openwallet.FeesSupportAccount{
-		AccountID: "5Tm3sqFap329wj3Du4DVXMkjAe85FVH3MaB6HSV8joj1",
+		AccountID:        "5Tm3sqFap329wj3Du4DVXMkjAe85FVH3MaB6HSV8joj1",
 		FixSupportAmount: "1",
 		//FeesSupportScale: "1.3",
 	}
@@ -352,7 +349,6 @@ func TestSummary_TRC10(t *testing.T) {
 
 }
 
-
 func TestSummary_TRC20(t *testing.T) {
 	tm := testInitWalletManager()
 	walletID := "WGVsUfTTVaCwAMRTqeJiDQsZ3vrWp9DzMA"
@@ -362,7 +358,7 @@ func TestSummary_TRC20(t *testing.T) {
 	//summaryAddress := "TS11WZyPnT8qidwREcR8VDzNULCXxFeBMa"
 
 	feesSupport := openwallet.FeesSupportAccount{
-		AccountID: "5Tm3sqFap329wj3Du4DVXMkjAe85FVH3MaB6HSV8joj1",
+		AccountID:        "5Tm3sqFap329wj3Du4DVXMkjAe85FVH3MaB6HSV8joj1",
 		FixSupportAmount: "0.5",
 		//FeesSupportScale: "1.3",
 	}

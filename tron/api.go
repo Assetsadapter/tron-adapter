@@ -18,8 +18,8 @@ package tron
 import (
 	"errors"
 	"fmt"
-	"github.com/blocktree/openwallet/log"
-	"github.com/blocktree/openwallet/openwallet"
+	"github.com/blocktree/openwallet/v2/log"
+	"github.com/blocktree/openwallet/v2/openwallet"
 	"github.com/imroc/req"
 	"github.com/shopspring/decimal"
 	"github.com/tidwall/gjson"
@@ -61,6 +61,7 @@ func (c *Client) Call(path string, param interface{}) (*gjson.Result, error) {
 
 	url := c.BaseURL + path
 	authHeader := req.Header{"Accept": "application/json"}
+
 	r, err := req.Post(url, req.BodyJSON(&param), authHeader)
 	if err != nil {
 		log.Errorf("Failed: %+v >\n", err)

@@ -18,15 +18,15 @@ package tron
 import (
 	"encoding/hex"
 	"fmt"
-	"github.com/blocktree/openwallet/common"
-	"github.com/Assetsadapter/tron-adapter/tron/grpc-gateway/core"
+	"github.com/blocktree/openwallet/v2/common"
+	"github.com/blocktree/tron-adapter/tron/grpc-gateway/core"
 	"github.com/golang/protobuf/proto"
 	"math/big"
 	"sort"
 	"strings"
 	"time"
 
-	"github.com/blocktree/openwallet/openwallet"
+	"github.com/blocktree/openwallet/v2/openwallet"
 	"github.com/shopspring/decimal"
 	// "github.com/blocktree/openwallet/assets/qtum/btcLikeTxDriver"
 	// "github.com/blocktree/openwallet/log"
@@ -358,6 +358,9 @@ func (decoder *TransactionDecoder) CreateTokenTransaction(wrapper openwallet.Wal
 }
 
 func (decoder *TransactionDecoder) CreateRawTransaction(wrapper openwallet.WalletDAI, rawTx *openwallet.RawTransaction) error {
+	if rawTx.Coin.IsContract {
+		rawTx.Coin.Contract.Protocol = TRC20
+	}
 	if !rawTx.Coin.IsContract {
 		return decoder.CreateSimpleTransaction(wrapper, rawTx)
 	} else {
@@ -512,6 +515,7 @@ func (decoder *TransactionDecoder) CreateSummaryRawTransaction(wrapper openwalle
 		rawTxArray        = make([]*openwallet.RawTransaction, 0)
 		err               error
 	)
+	sumRawTx.Coin.Contract.Protocol = TRC20
 	if sumRawTx.Coin.IsContract {
 		rawTxWithErrArray, err = decoder.CreateTokenSummaryRawTransaction(wrapper, sumRawTx)
 	} else {
@@ -531,6 +535,7 @@ func (decoder *TransactionDecoder) CreateSummaryRawTransaction(wrapper openwalle
 
 //CreateSummaryRawTransactionWithError 创建汇总交易，返回能原始交易单数组（包含带错误的原始交易单）
 func (decoder *TransactionDecoder) CreateSummaryRawTransactionWithError(wrapper openwallet.WalletDAI, sumRawTx *openwallet.SummaryRawTransaction) ([]*openwallet.RawTransactionWithError, error) {
+	sumRawTx.Coin.Contract.Protocol = TRC20
 	if sumRawTx.Coin.IsContract {
 		return decoder.CreateTokenSummaryRawTransaction(wrapper, sumRawTx)
 	} else {
@@ -960,6 +965,7 @@ func (decoder *TransactionDecoder) createRawTransaction(
 		EccType: decoder.wm.Config.CurveType,
 		Address: addr,
 		Message: txHash,
+		RSV:     true,
 	}
 	keySignList = append(keySignList, &signature)
 
