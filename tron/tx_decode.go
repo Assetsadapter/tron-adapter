@@ -857,7 +857,8 @@ func (decoder *TransactionDecoder) CreateTokenSummaryRawTransaction(wrapper open
 			rawTxArray = append(rawTxArray, rawTxWithErr)
 
 			//汇总下一个
-			continue
+			//continue
+			// 不能退出，需要继续执行汇总地址当中的代币
 		}
 
 		decoder.wm.Log.Debugf("balance: %v", addrBalance.Balance.Balance)

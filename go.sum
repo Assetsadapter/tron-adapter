@@ -111,6 +111,8 @@ github.com/blocktree/rcproto-adapter v1.0.0/go.mod h1:Z24b9N+wPEOsFPGy+WVYa6ERIj
 github.com/blocktree/ripple-adapter v1.0.3/go.mod h1:9BidhMwPmLjKnyuI7YurlyFCNdX4SzLsXG835q8zfLQ=
 github.com/blocktree/ripple-adapter v1.0.13 h1:zgJt7onq5+V6pvQ7Kl3xiiSkk3uxuCF07OpwCtJTM8w=
 github.com/blocktree/ripple-adapter v1.0.13/go.mod h1:eHHzuuFqm9NnWfc+wpx0XgcKQPxGmiyZ5pFcLV4ngjA=
+github.com/blocktree/tron-adapter v1.4.1 h1:62uy5qJm8p/yCtbHTqVC5W4YM8FTbPSz/HU7W5rRcWg=
+github.com/blocktree/tron-adapter v1.4.1/go.mod h1:K9OyMSnawYDTk0OIum4+IuSx6moKc51ZaABODpEDfmk=
 github.com/blocktree/virtualeconomy-adapter v1.1.5 h1:YJ2JKUifSsCjCneM0NUky3WbG0LEm7IKUBmf9EAmAXc=
 github.com/blocktree/virtualeconomy-adapter v1.1.5/go.mod h1:L1qpSNof49eCtN1ep/LEz2H9ngKsDxzhRqoistQWa/U=
 github.com/blocktree/waykichain-adapter v1.0.3 h1:qY/Txh+n4iIJA49rDMj41qpIUj3McjBir8Ls+sX8c3w=
